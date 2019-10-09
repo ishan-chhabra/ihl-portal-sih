@@ -109,37 +109,37 @@ Saves a new user in the database. All user details are to be provided in the req
 
 ## Playgrounds
 
-### Find playground by ID
+### Find Playground by ID
 
 `GET /api/playgrounds/:id`
 
 `404 Not Found` is set as the status if the playground is not found.
 
-#### Request parameters
+#### Request Parameters
 
 | Name | Type   | Description          |
 | ---- | ------ | -------------------- |
 | id   | String | ID of the playground |
 
-### Add new playground
+### Add new Playground
 
 `POST /api/playgrounds`
 
 Saves a new playground in the database. All playground details are to be provided in the request body. The response status is set to `409 Conflict` if the id is already taken. `201 Created` is returned if the playground is saved successfully.
 
-### Add user to playground
+### Add user to Playground
 
 `POST /api/playgrounds/:id/users`
 
 `201 Created` is returned if the user is successfully added.
 
-#### Request parameters
+#### Request Parameters
 
 | Name | Type   | Description          |
 | ---- | ------ | -------------------- |
 | id   | String | ID of the playground |
 
-#### Request body
+#### Request Body
 
 | Name   | Type   | Description                |
 | ------ | ------ | -------------------------- |
